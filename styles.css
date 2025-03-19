@@ -16,6 +16,7 @@ body {
   background-color: #ffffff;
   color: #262626;
   padding-bottom: 3rem;
+  transition: background-color 0.5 ease, color 0.5s ease;
 }
 
 img {
@@ -34,6 +35,17 @@ img {
   width: 100%;
   margin: 0 auto;
   background: #f3f3f3;
+  transition: background-color 0.5 ease, color 0.5s ease;
+}
+
+.dark-mode {
+  background-color: #070707;
+  color: white;
+}
+
+.dark-mode .container {
+  background-color: black;
+  color: white;
 }
 
 .profile {
@@ -70,29 +82,34 @@ h1 {
 
 .btn {
   border: none;
-  font-size: smaller;
+  font-size: 7px;
   cursor: pointer;
-  height: 20px;
+  height: 15px;
   margin: auto 0;
+  transition: transform 0.2s ease;
 }
 .btn:hover {
   background: #d3d3d3;
+  transform: scale(1.1);
 }
 
 .profile-edit-btn {
   border: #dfdfdf solid;
+  width: 70px;
 }
 
 #darkModeToggle {
   border: none;
-  font-size: smaller;
+  font-size: 7px;
   cursor: pointer;
-  height: 20px;
+  height: 15px;
   margin: auto 0;
+  transition: transform 0.2s ease;
 }
 
 #darkModeToggle:hover {
   background: #d3d3d3;
+  transform: scale(1.1);
 }
 
 .profile-stats {
