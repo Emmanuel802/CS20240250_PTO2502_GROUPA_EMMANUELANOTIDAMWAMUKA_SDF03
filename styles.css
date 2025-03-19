@@ -1,23 +1,116 @@
 /* Base Styles */
 
 :root {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Open Sans", Arial, sans-serif;
-    min-height: 100vh;
-    background-color: #fafafa;
-    color: #262626;
-    padding-bottom: 3rem;
+  font-family: "Open Sans", Arial, sans-serif;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #262626;
+  padding-bottom: 3rem;
 }
 
 img {
-    display: block;
+  display: block;
+  object-fit: cover;
+  height: 300px;
+  width: 200px;
 }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  background: #f3f3f3;
+}
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.profile-image img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 8px solid #006650;
+}
+
+.profile-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.profile-user-settings {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.btn {
+  border: none;
+  font-size: smaller;
+  cursor: pointer;
+  height: 20px;
+  margin: auto 0;
+}
+.btn:hover {
+  background: #d3d3d3;
+}
+
+.profile-edit-btn {
+  border: #dfdfdf solid;
+}
+
+#darkModeToggle {
+  border: none;
+  font-size: smaller;
+  cursor: pointer;
+  height: 20px;
+  margin: auto 0;
+}
+
+#darkModeToggle:hover {
+  background: #d3d3d3;
+}
+
+.profile-stats {
+  margin: 20px 0;
+}
+
+.profile-stats ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 1em;
+}
+
+span {
+  font-weight: bold;
+}
+
+p {
+  font-size: 1em;
+}
+/* End Of Profile Section */
