@@ -33,6 +33,7 @@ img {
   align-items: center;
   max-width: 600px;
   width: 100%;
+  padding: 10px 0;
   margin: 0 auto;
   background: #f3f3f3;
   transition: background-color 0.5 ease, color 0.5s ease;
@@ -118,7 +119,7 @@ h1 {
 
 .profile-stats ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   list-style: none;
   font-size: 1em;
 }
@@ -131,3 +132,21 @@ p {
   font-size: 1em;
 }
 /* End Of Profile Section */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  display: block;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
