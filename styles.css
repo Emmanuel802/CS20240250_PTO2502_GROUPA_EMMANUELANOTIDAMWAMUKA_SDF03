@@ -42,11 +42,16 @@ img {
 .dark-mode {
   background-color: #070707;
   color: white;
+  border-top: 4px solid#000000;
 }
 
 .dark-mode .container {
   background-color: black;
   color: white;
+}
+
+.dark-mode .loader {
+  border-top: 4px solid #000000;
 }
 
 .profile {
@@ -80,7 +85,7 @@ img {
 
 h1 {
   font-size: 2em;
-  font-weight: 300;
+  font-weight: lighter;
 }
 
 .btn {
@@ -152,6 +157,11 @@ p {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.03);
 }
 
 .gallery-item-info {
@@ -180,13 +190,30 @@ p {
   align-items: center;
   font-size: 1.2em;
   padding: 0;
-}
-
-.gallery-item-likes,
-.gallery-item-comments {
   list-style: none;
 }
 
 .visually-hidden {
   display: none;
+}
+
+.loader {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 4px solid #006650;
+  border-top: 4px solid #ffffff;
+  margin: 10px auto;
+  animation: spin 0.5s linear infinite;
+  transition: border-top 0.5 ease;
+}
+
+@keyframes spin {
+  5% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
